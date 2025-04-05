@@ -1,0 +1,109 @@
+$primary-color: #EA2029;
+$header-xs-height: 80px;
+$header-lg-height: 88px;
+
+// Text colors
+$secondary-text-color: #ED1F24;
+$text-dark: #000000;
+$text-light: #ffffff;
+
+// font size
+// small device
+$h1-xs: 32px;
+$h2-xs: 24px;
+$h3-xs: 20px;
+$h4-xs: 18px;
+$h5-xs: 16px;
+$h6-xs: 14px;
+$p-xs: 14px;
+
+// medium device
+$p-md: 16px;
+
+// large device
+$h1-lg: 48px;
+$h2-lg: 40px;
+$h3-lg: 32px;
+$h4-lg: 28px;
+$h5-lg: 24px;
+$h6-lg: 20px;
+$p-lg: 18px;
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+button, .button{
+    color: $text-light;
+    font-size: $p-md;
+    height: 40px;
+    padding: 0px 24px;
+    background-color: rgba($primary-color, 1);
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba($primary-color, 0.8);
+        color: $text-light               
+    };
+    transition: all 0.4s;
+}
+.button2{
+    @extend button;
+    background-color: rgba($primary-color, 0.05);
+    color: $text-dark;
+}
+.container{
+    max-width: 650px;
+    margin: auto;
+    padding: 0px 16px;
+}
+header{
+    border-bottom: 1px solid #00000029;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-xs-height;
+    nav, button{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 56px;
+        flex-wrap: nowrap;
+        li a{
+            color: $text-dark;
+            text-decoration: none;
+            font-size: $p-lg;
+        }
+    }
+}
+@media screen and (min-width: 744px){
+    .container{
+        max-width: 1000px;
+        padding: 0px 32px;
+    }
+    .navbar{
+        height: $header-lg-height;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1440px;
+    }
+    .navbar{
+        height: $header-lg-height;
+        nav, button{
+            display: block;
+        };
+        #hamburger{
+            display: none;
+        }
+    }
+}

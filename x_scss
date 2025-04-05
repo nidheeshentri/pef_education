@@ -1,0 +1,48 @@
+$primary-color: rgb(133, 255, 133);
+$secondary-color: rgb(0, 0, 255);
+
+$header-height: 100px;
+
+@mixin dflex-header($jContent, $aItems, $height) {
+    display: flex;
+    justify-content: $jContent;
+    align-items: $aItems;
+    height: $height;
+}
+
+
+@import "./variables";
+@import "./mixins";
+
+button{
+    background-color: red;
+    &:hover{
+        color: green;
+    }
+}
+
+header{
+    background-color: $primary-color;
+    @include dflex-header(space-between, center, 200px);
+    h1{
+        color: $secondary-color;
+    };
+    button{
+        background-color: blue;
+        &:hover{
+            background: red;
+        };
+        &::after{
+            content: ">";
+            color: white;
+        }
+        &::before{
+            content: "<";
+            color: white;
+        }
+    }
+}
+
+h1{
+    @extend button
+}
