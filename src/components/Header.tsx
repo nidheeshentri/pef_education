@@ -1,8 +1,20 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import Sidebar from './Sidebar'
 
 const Header = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+    };
 
     const navLinks = [
         {title: "Programs", link: "/programs"},
@@ -31,8 +43,18 @@ const Header = () => {
 
             <button>Register Now</button>
 
-            <Image src = "/images/icons/menu.png" alt = "hamburger" height = {24} width = {24} id = "hamburger" />
+            <Image 
+                src = "/images/icons/menu.png" 
+                alt = "hamburger" 
+                height = {24} 
+                width = {24} 
+                id = "hamburger"
+                onClick={toggleSidebar}
+                style={{ cursor: 'pointer' }}
+            />
         </div>
+        
+        <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
     </header>
   )
 }
