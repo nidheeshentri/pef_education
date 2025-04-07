@@ -9,7 +9,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -927,7 +927,7 @@ header {
     font-size: 40px;
   }
   h3, .h3 {
-    font-size: 40px;
+    font-size: 32px;
   }
   h4, .h4 {
     font-size: 28px;
