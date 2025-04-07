@@ -71,6 +71,13 @@ const testimonials = [
                     >
                       ← 
                     </button>
+                    <button
+                      className="nav-button next"
+                      aria-label="Next testimonial"
+                      onClick={handleNextClick}
+                    >
+                      →
+                    </button>
 
                     <div className="quote-content">
                       <blockquote>&quot;{testimonial.quote}&quot;</blockquote>
@@ -110,14 +117,6 @@ const testimonials = [
                         </div>
                       </div>
                     </div>
-
-                    <button
-                      className="nav-button next"
-                      aria-label="Next testimonial"
-                      onClick={handleNextClick}
-                    >
-                      →
-                    </button>
                   </div>
                 </div>
               </div>
