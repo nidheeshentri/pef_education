@@ -11,8 +11,8 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   const navLinks = [
     {title: "Programs", link: "/programs"},
     {title: "Destination", link: "/destination"},
-    {title: "Services", link: "#services"},
-    {title: "About us", link: "#about-us"},
+    {title: "Services", link: "/#services"},
+    {title: "About us", link: "/#about-us"},
   ]
 
   return (
@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
           <Image src="/images/logo.png" alt="logo" height={40} width={151}/>
         </Link>
         <button className="close-btn" onClick={onClose}>
-          <Image src="/images/icons/close.png" alt="close" height={24} width={24} />
+          <Image className='rotate-45' src="/images/icons/plus.png" alt="close" height={24} width={24} />
         </button>
       </div>
       <nav className="sidebar-nav">
