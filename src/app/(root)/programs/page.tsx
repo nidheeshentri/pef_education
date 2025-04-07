@@ -182,7 +182,7 @@ const Programs = () => {
                 <h2>
                   <span>Medical</span> & Health care
                 </h2>
-                <p>
+                <p className = "mb-24">
                   Looking to build a career in medicine and healthcare? Studying
                   abroad gives you access to top universities, advanced
                   facilities, and global career opportunities.
@@ -208,7 +208,7 @@ const Programs = () => {
                 <h2>
                   Engineering & <span className = "highlight2">Technology</span>
                 </h2>
-                <p>
+                <p className = "mb-24">
                   Want a career in engineering and technology? Study abroad for top universities, advanced labs, and global opportunities!
                 </p>
                 <h3>We offer programs in :</h3>
@@ -221,7 +221,7 @@ const Programs = () => {
                   <li>Biomedical Engineering</li>
                 </ul>
               </div>
-              <div className="section-image">
+              <div className="section-image mob-order-1">
                 <Image
                 className="medical-image"
                   src="/images/engineering.png"
@@ -247,7 +247,7 @@ const Programs = () => {
                 <h2>
                   Business & <span className = "highlight2">Management</span>
                 </h2>
-                <p>
+                <p className = "mb-24">
                   Want a successful business career? Study abroad for top universities, global networking, and industry-leading education!
                 </p>
                 <h3>We offer programs in :</h3>
@@ -268,7 +268,7 @@ const Programs = () => {
                 <h2>
                   <span className = "highlight2">Short-Term</span> & Vocational
                 </h2>
-                <p>
+                <p className = "mb-24">
                   Want industry-specific skills fast? Short-term programs abroad offer hands-on training and job-ready certifications!
                 </p>
                 <h3>We offer programs in :</h3>
@@ -281,7 +281,7 @@ const Programs = () => {
                   <li>Health & Wellness</li>
                 </ul>
               </div>
-              <div className="section-image">
+              <div className="section-image mob-order-1">
                 <Image
                 className="medical-image"
                   src="/images/vocational.png"

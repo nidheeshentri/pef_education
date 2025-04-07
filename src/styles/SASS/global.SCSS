@@ -58,7 +58,7 @@ h6, .h6{
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: var(--font-poppins);
 }
-p, .p{
+p, .p, li{
     font-size: $p-xs;
     line-height: 135%;
     font-family: var(--font-inter);
@@ -864,6 +864,9 @@ header{
   left: 0;
   bottom: 50px;
 }
+.mob-order-1{
+  order: -1;
+}
   
 @media screen and (min-width: 744px){
     .container{
@@ -1193,5 +1196,8 @@ header{
         bottom: 0;
         height: 200px;
         width: 400px;
+      }
+      .mob-order-1{
+        order: 1;
       }
 }
