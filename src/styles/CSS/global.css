@@ -1,41 +1,37 @@
 h1, .h1 {
   font-size: 32px;
-  font-weight: bold;
 }
 
 h2, .h2 {
   font-size: 24px;
-  font-weight: bold;
 }
 
 h3, .h3 {
   font-size: 20px;
-  font-weight: bold;
 }
 
 h4, .h4 {
   font-size: 18px;
-  font-weight: bold;
 }
 
 h5, .h5 {
   font-size: 16px;
-  font-weight: bold;
 }
 
 h6, .h6 {
   font-size: 14px;
-  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--font-poppins);
+  font-weight: 600;
 }
 
 p, .p, li {
   font-size: 14px;
   line-height: 135%;
   font-family: var(--font-inter);
+  font-weight: 400;
 }
 
 .mb-16 {
@@ -66,8 +62,12 @@ p, .p, li {
   margin-bottom: 80px;
 }
 
+.mb-180 {
+  margin-bottom: 180px;
+}
+
 .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 * {
@@ -153,6 +153,10 @@ button:hover, .button2:hover, .button:hover, .opportunities-container .program-c
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1607843137);
   margin-bottom: 20px;
+  position: sticky;
+  z-index: 32;
+  top: 0px;
+  background-color: #ffffff;
 }
 
 .navbar {
@@ -572,7 +576,7 @@ header {
   height: 1.2rem;
   background-color: #ed1f24;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -826,6 +830,10 @@ header {
   order: -1;
 }
 
+.weight-500 {
+  font-weight: 500;
+}
+
 @media screen and (min-width: 744px) {
   .container {
     max-width: 1000px;
@@ -899,7 +907,7 @@ header {
     height: 1.2rem;
     background-color: #ed1f24;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1088,7 +1096,7 @@ header {
     height: 1.2rem;
     background-color: #ed1f24;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 50%;
     display: flex;
     align-items: center;

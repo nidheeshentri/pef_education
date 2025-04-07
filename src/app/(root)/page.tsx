@@ -111,15 +111,15 @@ export default function Home() {
   
   return (
     <React.Fragment>
-      <section className="mb-40">
+      <section className="mb-80">
         <div className = "container home-hero-section">
           <div className = "hero-title">
-            <h1 className = "mb-24">Why Just Dream? Study & succeed Now!</h1>
+            <h1 className = "mb-24">Why Just Dream? <br />Study & succeed Now!</h1>
             <p className = "mb-40">From dreaming to doing- your global education journey starts here! Study beyond borders, learn beyond limits</p>
             <button className="mb-24">Book free Consultation</button>
-            <div className = "d-flex">
+            <div className = "d-flex gap-10">
               <Image src = "/images/icons/students-stack.png" height = {36} width = {68} alt = "students stack"/>
-              <p>
+              <p className = "bold">
                 <span className = "highlight1">14,000+</span> Students Trust Us
               </p>
             </div>
@@ -177,21 +177,21 @@ export default function Home() {
               <div className="features-icon-container">
                 <Image src = "/images/icons/career.png" height={48} width={48} alt = "career icon" className="features-icon"/>
               </div>
-              <h3 className = "h4">Top Universities</h3>
+              <h3 className = "h4 weight-500">Top Universities</h3>
               <p>Learn from the best medical schools, globally recognized and trusted</p>
             </div>
             <div className = "features-card">
               <div className="features-icon-container">
                 <Image src = "/images/icons/form.png" height={48} width={48} alt = "career icon" className="features-icon"/>
               </div>
-              <h3 className = "h4">Seamless Admissions</h3>
+              <h3 className = "h4 weight-500">Seamless Admissions</h3>
               <p>We simplify your MBBS journey with expert guidance and easy applications</p>
             </div>
             <div className = "features-card">
               <div className="features-icon-container">
                 <Image src = "/images/icons/certificate.png" height={48} width={48} alt = "career icon" className="features-icon"/>
               </div>
-              <h3 className = "h4">Scholarship Support</h3>
+              <h3 className = "h4 weight-500">Scholarship Support</h3>
               <p>Explore financial aid options to make your medical education stress-free</p>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default function Home() {
       <div style = {{width: "100%", overflow: "hidden"}}>
         <DestinationSlider />
       </div>
-      <section className = "mb-80" id = "about-us">
+      <section className = "mb-180" id = "about-us">
         <div className="container">
           <div className = "home-programs-container">
             <div className = "mb-24">
@@ -223,31 +223,31 @@ export default function Home() {
             </div>
             <ul className="home-programs">
               <li>
-                <Link href = "/programs" className="programs-li-title h4">Undergraduate Programs 
+                <Link href = "/programs/#undergraduate" className="programs-li-title h5 weight-500">Undergraduate Programs 
                   <Image src = "/images/icons/redirect.png" height = {14} width = {14} alt="redirect icon" />
                 </Link>
                 <p>Earn your degree from top universities in <span className = "bold">25+ countries</span> with expert guidance, career-focused learning, and global connections.</p>
               </li>
               <li>
-                <Link href = "/programs" className="programs-li-title h4 mb-20">Graduate Programs 
+                <Link href = "/programs/#graduate" className="programs-li-title h5 weight-500 mb-20">Graduate Programs 
                   <Image src = "/images/icons/redirect.png" height = {14} width = {14} alt="redirect icon" />
                 </Link>
                 <p>Pursue a master&apos;s degree from leading universities in <span className = "bold">20+ countries</span>. We handle the admissions, provide expert career advice, and connect you with industry opportunities for a successful future.</p>
               </li>
               <li>
-                <Link href = "/programs" className="programs-li-title h4 mb-20">Exchange Programs 
+                <Link href = "/programs/#exchange" className="programs-li-title h5 weight-500 mb-20">Exchange Programs 
                   <Image src = "/images/icons/redirect.png" height = {14} width = {14} alt="redirect icon" />
                 </Link>
                 <p>Study abroad in <span className = "bold">15+ countries</span> with complete support on visas, housing, and credits for a smooth experience.</p>
               </li>
               <li>
-                <Link href = "/programs" className="programs-li-title h4 mb-20">Language Programs 
+                <Link href = "/programs/#language" className="programs-li-title h5 weight-500 mb-20">Language Programs 
                   <Image src = "/images/icons/redirect.png" height = {14} width = {14} alt="redirect icon" />
                 </Link>
                 <p>Master new languages in <span className = "bold">10+ countries</span> through immersive learning, expert guidance, and real-world communication practice.</p>
               </li>
-              <li>
-                <Link href = "/programs" className="programs-li-title h4 mb-20">Internship Programs 
+              <li style = {{border: 0}}>
+                <Link href = "/programs/#internship" className="programs-li-title h5 weight-500 mb-20">Internship Programs 
                   <Image src = "/images/icons/redirect.png" height = {14} width = {14} alt="redirect icon" />
                 </Link>
                 <p>Programs that blend academic learning with hands-on work experience for a career-ready education.</p>

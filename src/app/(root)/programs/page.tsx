@@ -31,6 +31,7 @@ const academicPrograms = [
       "Gain cultural and global exposure",
     ],
     duration: "Duration: 3-4 years",
+    id: "undergraduate"
   },
   {
     title: "Graduate Programs",
@@ -42,6 +43,7 @@ const academicPrograms = [
       "Research opportunities in leading institutions",
     ],
     duration: "Duration: 3-4 years",
+    id: "graduate"
   },
   {
     title: "Exchange Programs",
@@ -53,6 +55,7 @@ const academicPrograms = [
       "Cultural exchange and networking",
     ],
     duration: "Duration: 3-4 years",
+    id: "exchange"
   },
   {
     title: "Language Programs",
@@ -64,6 +67,7 @@ const academicPrograms = [
       "Experience full cultural immersion",
     ],
     duration: "Duration: 3-4 years",
+    id: "language"
   },
   {
     title: "Internship Programs",
@@ -74,6 +78,7 @@ const academicPrograms = [
       "Boost employability with global exposure",
     ],
     duration: "Duration: 3-4 years",
+    id: "internship"
   },
   {
     title: "Pathway Programs",
@@ -144,7 +149,7 @@ const Programs = () => {
             </div>
             <div className="programs-cards">
               {academicPrograms.map((program, index) => (
-                <div className="program-card" key={index}>
+                <div className="program-card" key={index} id = {program.id}>
                   <h2 className="h4">{program.title}</h2>
                   <p>{program.description}</p>
                   <div className="duration">

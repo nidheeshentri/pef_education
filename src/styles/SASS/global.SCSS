@@ -33,35 +33,31 @@ $p-lg: 18px;
 
 h1, .h1{
     font-size: $h1-xs;
-    font-weight: bold;
 }
 h2, .h2{
     font-size: $h2-xs;
-    font-weight: bold;
 }
 h3, .h3{
     font-size: $h3-xs;
-    font-weight: bold;
 }
 h4, .h4{
     font-size: $h4-xs;
-    font-weight: bold;
 }
 h5, .h5{
     font-size: $h5-xs;
-    font-weight: bold;
 }
 h6, .h6{
     font-size: $h6-xs;
-    font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: var(--font-poppins);
+    font-weight: 600;
 }
 p, .p, li{
     font-size: $p-xs;
     line-height: 135%;
     font-family: var(--font-inter);
+    font-weight: 400;
 }
 .mb-16{
     margin-bottom: 16px;
@@ -84,8 +80,11 @@ p, .p, li{
 .mb-80{
     margin-bottom: 80px;
 }
+.mb-180{
+    margin-bottom: 180px;
+}
 .bold{
-    font-weight: bold;
+  font-weight: 600;
 }
 *{
     box-sizing: border-box;
@@ -156,6 +155,10 @@ button, .button{
 header{
     border-bottom: 1px solid #00000029;
     margin-bottom: 20px;
+    position: sticky;
+    z-index: 32;
+    top: 0px;
+    background-color: $text-light;
 }
 .navbar{
     display: flex;
@@ -591,7 +594,7 @@ header{
         height: 1.2rem;
         background-color: #ed1f24;
         color: white;
-        font-weight: bold;
+        font-weight: 600;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -867,6 +870,10 @@ header{
 .mob-order-1{
   order: -1;
 }
+
+.weight-500{
+  font-weight: 500;
+}
   
 @media screen and (min-width: 744px){
     .container{
@@ -950,7 +957,7 @@ header{
             height: 1.2rem;
             background-color: #ed1f24;
             color: white;
-            font-weight: bold;
+            font-weight: 600;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1161,7 +1168,7 @@ header{
             height: 1.2rem;
             background-color: #ed1f24;
             color: white;
-            font-weight: bold;
+            font-weight: 600;
             border-radius: 50%;
             display: flex;
             align-items: center;
