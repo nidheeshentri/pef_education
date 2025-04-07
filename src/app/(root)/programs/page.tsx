@@ -154,7 +154,7 @@ const Programs = () => {
                   <ul>
                     {program.details.map((item, idx) => (
                       <div className="duration" key = {idx}>
-                        <Image src="/images/icons/vector.png" alt="tick" height={18} width={18}/>
+                        <Image src="/images/icons/Vector.png" alt="tick" height={18} width={18}/>
                         <li key={idx}>{item}</li>
                       </div>
                     ))}
