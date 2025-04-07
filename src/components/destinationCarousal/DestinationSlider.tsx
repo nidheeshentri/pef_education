@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import './DestinationSlider-min.css';
+import Link from 'next/link';
 const destinations = [
     {
       id: 1,
@@ -162,7 +163,9 @@ const DestinationSlider = () => {
         </div>
         
         <div className="slider-action">
-          <button className='button2'>Explore All Destinations</button>
+          <Link href = "/destination">
+            <button className='button2'>Explore All Destinations</button>
+          </Link>
         </div>
       </div>
     </section>
