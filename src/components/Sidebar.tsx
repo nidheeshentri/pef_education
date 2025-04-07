@@ -33,10 +33,10 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </li>
           ))}
         </ul>
+        <div className="sidebar-footer">
+          <button>Register Now</button>
+        </div>
       </nav>
-      <div className="sidebar-footer">
-        <button>Register Now</button>
-      </div>
     </div>
   )
 }
