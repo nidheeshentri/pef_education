@@ -7,39 +7,40 @@ import Link from 'next/link';
 const destinations = [
     {
       id: 1,
-      name: 'UK',
-      image: '/images/home/uk.jpeg',
-      flag: '/images/flags/uk_flag.png',
-      description: 'Strong research & vibrant student life'
-    },
-    {
-      id: 2,
-      name: 'Australia',
-      image: '/images/home/australia.jpeg',
-      flag: '/images/flags/australia_flag.jpeg',
-      description: 'Laid-back lifestyle & top research facilities'
-    },
-    {
-      id: 3,
       name: 'United States',
-      image: '/images/home/usa.jpeg',
+      image: '/images/US.jpeg',
       flag: '/images/flags/usa_flag.jpeg',
       description: 'Affordable education & multicultural vibe'
     },
     {
-      id: 4,
+      id: 2,
+      name: 'Germany',
+      image: '/images/Germany.jpeg',
+      flag: '/images/flags/germany_flag.png',
+      description: 'Laid-back lifestyle & top research facilities'
+    },
+    {
+      id: 3,
       name: 'UK',
-      image: '/images/home/uk.jpeg',
+      image: '/images/Uk.jpeg',
       flag: '/images/flags/uk_flag.png',
       description: 'Strong research & vibrant student life'
     },
     {
-      id: 5,
+      id: 4,
       name: 'Australia',
-      image: '/images/home/australia.jpeg',
+      image: '/images/Australia.jpeg',
       flag: '/images/flags/australia_flag.jpeg',
       description: 'Laid-back lifestyle & top research facilities'
     },
+    {
+      id: 5,
+      name: 'Canada',
+      image: '/images/Canada.jpeg',
+      flag: '/images/flags/canada_flag.png',
+      description: 'Laid-back lifestyle & top research facilities'
+    },
+    
   ];
 
 const DestinationSlider = () => {
@@ -74,7 +75,6 @@ const DestinationSlider = () => {
     }, 600); // Match this with the CSS transition duration
   };
   
-  // Add autoplay functionality
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isAnimating) {
@@ -89,7 +89,7 @@ const DestinationSlider = () => {
     <section className="destination-slider">
       <div className="container">
         <div className="slider-header">
-          <h2 className="title">Find Your <span className="highlight">Perfect</span> Destination</h2>
+          <h2 className = "mb-20">Find Your <span className="highlight1">Perfect</span> Destination</h2>
           <p className="subtitle">Consider language, culture, cost of living, climate, and safety to choose the right study abroad destination for you.</p>
         </div>
         
@@ -99,7 +99,7 @@ const DestinationSlider = () => {
             onClick={handlePrev}
             aria-label="Previous destination"
           >
-            {"<"}
+            <Image src = "/images/Left.svg" alt = "Right arrow" height={18} width={18}/>
           </button>
           
           <div className="cards-wrapper">
@@ -158,7 +158,7 @@ const DestinationSlider = () => {
             onClick={handleNext}
             aria-label="Next destination"
           >
-            {">"}
+            <Image src = "/images/Left.svg" alt = "Right arrow" height={18} width={18}/>
           </button>
         </div>
         

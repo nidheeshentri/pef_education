@@ -6,11 +6,11 @@ import './Footer-min.css';
 const Footer = () => {
   return (
     <footer className="main-footer">
-      <div className="footer-container">
+      <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
             <Image
-              src="/images/home/logo.png"
+              src="/images/Logo.svg"
               alt="PEF Education Logo"
               width={212}
               height={56}
@@ -21,31 +21,31 @@ const Footer = () => {
             <div className="footer-column">
               <h3>Programs</h3>
               <ul>
-                <li><Link href="#">Undergraduate</Link></li>
-                <li><Link href="#">Postgraduate</Link></li>
-                <li><Link href="#">Exchange</Link></li>
-                <li><Link href="#">Language</Link></li>
-                <li><Link href="#">Foundation</Link></li>
-                <li><Link href="#">Diploma</Link></li>
+                <li>Undergraduate</li>
+                <li>Postgraduate</li>
+                <li>Exchange</li>
+                <li>Language</li>
+                <li>Foundation</li>
+                <li>Diploma</li>
               </ul>
             </div>
             
             <div className="footer-column">
               <h3>Destination</h3>
               <ul>
-                <li><Link href="#">Canada</Link></li>
-                <li><Link href="#">UK</Link></li>
-                <li><Link href="#">Australia</Link></li>
-                <li><Link href="#">New Zealand</Link></li>
-                <li><Link href="#">USA</Link></li>
-                <li><Link href="#">Europe</Link></li>
+                <li>Canada</li>
+                <li>UK</li>
+                <li>Australia</li>
+                <li>New Zealand</li>
+                <li>USA</li>
+                <li>Europe</li>
               </ul>
             </div>
             
             <div className="footer-column">
               <h3>About</h3>
               <ul>
-                <li><Link href="#">About us</Link></li>
+                <li><Link href="#about-us">About us</Link></li>
                 <li className="address">
                   123 Fashion Street,<br />
                   Downtown Avenue, Mumbai,<br />
@@ -88,9 +88,8 @@ const Footer = () => {
             © 2025 Lorem All rights reserved
           </div>
           
-          <div className="legal-links">
-            <Link href="#">Terms & Condition</Link>
-            <Link href="#">Privacy Policy</Link>
+          <div className="copyright">
+          Powered by <Link href = "https://www.marketlube.in/" target = "_blank" style = {{textDecoration: "underline", color: "unset"}}>Marketlube</Link>
           </div>
         </div>
       </div>

@@ -3,9 +3,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import Sidebar from './Sidebar'
 
+
 const Header = () => {
+    const pathname = usePathname()
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -28,26 +31,27 @@ const Header = () => {
     <header>
         <div className = "container navbar">
             <Link href = "/">
-                <Image src = "/images/logo.png" alt = "logo" height={40} width={151}/>
+                <Image src = "/images/Logo.svg" alt = "logo" height={40} width={151}/>
             </Link>
 
             <nav>
                 <ul>
                     {navLinks.map((item, index) => (
                         <li key = {index}>
-                            <Link href = {item.link} >{item.title}</Link>
+                            <Link href = {item.link} className={pathname === item.link?"bold":""}>{item.title}</Link>
                         </li>
                     ))}
                 </ul>
             </nav>
-
-            <button>Register Now</button>
+            <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'><button>
+                Register Now
+            </button></Link>
 
             <Image 
-                src = "/images/icons/menu.png" 
+                src = "/images/icons/Menu.svg" 
                 alt = "hamburger" 
-                height = {24} 
-                width = {24} 
+                height = {50} 
+                width = {50} 
                 id = "hamburger"
                 onClick={toggleSidebar}
                 style={{ cursor: 'pointer' }}

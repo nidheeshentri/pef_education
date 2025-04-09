@@ -18,11 +18,9 @@
   padding-right: 100px;
 }
 .main-footer .footer-content .footer-navigation {
-  flex: 0 0 77%;
   display: flex;
-}
-.main-footer .footer-content .footer-navigation .footer-column {
   flex: 1;
+  justify-content: space-between;
 }
 .main-footer .footer-content .footer-navigation .footer-column h3 {
   font-size: 18px;
@@ -103,6 +101,7 @@
 .main-footer .footer-bottom .copyright {
   font-size: 14px;
   color: #666;
+  font-family: inter;
 }
 .main-footer .footer-bottom .legal-links {
   display: flex;
@@ -127,8 +126,8 @@
     margin-bottom: 30px;
   }
   .main-footer .footer-content .footer-navigation {
-    flex: 0 0 auto;
     width: 100%;
+    justify-content: space-between;
   }
 }
 @media (max-width: 768px) {

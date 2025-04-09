@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const programCategories = [
@@ -101,7 +102,7 @@ const Programs = () => {
           <div className="program-container">
             <div className="program-title">
               <h1 className = "mb-32">
-                Your Future, Your <span>Program</span> Find It Today
+                Your Future, Your <span>Program</span> <br />Find It Today
               </h1>
               <p className="p">
                 Find the right program that fits your career goals. Browse through
@@ -110,12 +111,9 @@ const Programs = () => {
             </div>
 
             <div className="search-container mb-80">
-              <input
-                type="text"
-                placeholder="Find programs by name, country, or category..."
-                className="search-input"
-              />
-              <button>Search</button>
+              <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'><button className="mb-24">
+                Book free Consultation
+              </button></Link>
             </div>
             <div className="category-grid mb-64">
               {programCategories.map((category, index) => (
@@ -177,7 +175,7 @@ const Programs = () => {
               <div className="section-image">
                 <Image
                 className="medical-image"
-                  src="/images/medical.png"
+                  src="/images/Medical.jpeg"
                   alt="Medical & Healthcare"
                   width={280}
                   height={180}
