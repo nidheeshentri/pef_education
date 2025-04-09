@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="footer-column">
               <h3>About</h3>
               <ul>
-                <li><Link href="#about-us">About us</Link></li>
+                <li><Link href="/#about-us">About us</Link></li>
                 <li className="address">
                   123 Fashion Street,<br />
                   Downtown Avenue, Mumbai,<br />

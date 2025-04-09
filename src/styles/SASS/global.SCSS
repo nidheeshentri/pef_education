@@ -31,6 +31,10 @@ $h5-lg: 24px;
 $h6-lg: 20px;
 $p-lg: 18px;
 
+html {
+  scroll-padding-top: 110px; /* adjust to your header height */
+}
+
 h1,
 .h1 {
   font-size: $h1-xs;
@@ -654,9 +658,10 @@ header {
     }
   }
   .medical-image {
-    height: 256.818px;
-    align-self: stretch;
-    aspect-ratio: 396/256.82;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 20px;
   }
 }
 

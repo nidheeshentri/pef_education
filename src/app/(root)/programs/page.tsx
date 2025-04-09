@@ -5,19 +5,19 @@ import React from "react";
 const programCategories = [
   {
     title: "Medical & Healthcare",
-    image: "/images/medical.png",
+    image: "/images/Medical.jpeg",
   },
   {
     title: "Engineering & Technology",
-    image: "/images/engineering.png",
+    image: "/images/engineering.jpeg",
   },
   {
     title: "Business & Management",
-    image: "/images/business.png",
+    image: "/images/business.jpeg",
   },
   {
     title: "Short-Term & Vocational",
-    image: "/images/vocational.png",
+    image: "/images/short_term.jpeg",
   },
 ];
 
@@ -122,8 +122,8 @@ const Programs = () => {
                     className="program-image"
                     src={category.image}
                     alt={category.title}
-                    height={100}
-                    width={100}
+                    height={1000}
+                    width={1000}
                   />
                   <h5>{category.title}</h5>
                 </div>
@@ -177,8 +177,8 @@ const Programs = () => {
                 className="medical-image"
                   src="/images/Medical.jpeg"
                   alt="Medical & Healthcare"
-                  width={280}
-                  height={180}
+                  height={1000}
+                    width={1000}
                 />
               </div>
               <div className="section-details">
@@ -227,10 +227,10 @@ const Programs = () => {
               <div className="section-image mob-order-1">
                 <Image
                 className="medical-image"
-                  src="/images/engineering.png"
+                  src="/images/engineering.jpeg"
                   alt="Medical & Healthcare"
-                  width={280}
-                  height={180}
+                  height={1000}
+                    width={1000}
                 />
               </div>
             </div>
@@ -240,10 +240,10 @@ const Programs = () => {
               <div className="section-image">
                 <Image
                 className="medical-image"
-                  src="/images/business.png"
+                  src="/images/business.jpeg"
                   alt="Medical & Healthcare"
-                  width={280}
-                  height={180}
+                  height={1000}
+                    width={1000}
                 />
               </div>
               <div className="section-details">
@@ -287,10 +287,10 @@ const Programs = () => {
               <div className="section-image mob-order-1">
                 <Image
                 className="medical-image"
-                  src="/images/vocational.png"
+                  src="/images/short_term.jpeg"
                   alt="Medical & Healthcare"
-                  width={280}
-                  height={180}
+                  height={1000}
+                    width={1000}
                 />
               </div>
             </div>

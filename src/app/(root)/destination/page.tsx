@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Destination = {
@@ -105,7 +106,9 @@ const Destination = () => {
                   step toward a world-class education and global <br /> career
                   opportunities!
                 </p>
-                <button className="mb-24">Book Free Consultation</button>
+                <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'><button className="mb-24">
+                  Book free Consultation
+                </button></Link>
               </div>
             </div>
           </section>
@@ -232,7 +235,9 @@ const Destination = () => {
             <br />
             Experience?
           </h1>
-          <button>Book Consultation</button>
+          <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'><button>
+            Book Consultation
+          </button></Link>
         </div>
       </section>
     </>
