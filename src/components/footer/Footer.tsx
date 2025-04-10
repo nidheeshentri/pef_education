@@ -52,7 +52,7 @@ const Footer = () => {
                   India , 400001
                 </li>
                 <li className="email">Lorem@gmail.com</li>
-                <li><Link href="#">Support & FAQ</Link></li>
+                <li>Support & FAQ</li>
               </ul>
             </div>
           </div>

@@ -57,12 +57,20 @@ li {
   font-weight: 400;
 }
 
+.font-inter {
+  font-family: var(--font-inter) !important;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins) !important;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
 
 .mb-20 {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .mb-24 {
@@ -153,6 +161,10 @@ button a, .button2 a,
   padding: 0px 16px;
 }
 
+.container-md {
+  margin: auto;
+}
+
 .highlight1 {
   color: #ea2029;
 }
@@ -184,7 +196,11 @@ button a, .button2 a,
 }
 
 .show-lg {
-  display: none;
+  display: none !important;
+}
+
+.visible-lg {
+  visibility: hidden;
 }
 
 .text-center {
@@ -900,8 +916,15 @@ header {
   font-weight: 500;
 }
 
+#testimonialCarousalContainer {
+  max-width: 100vw;
+  padding: 100px 0px;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 744px) {
-  .container {
+  .container,
+  .container-md {
     max-width: 1000px;
     padding: 0px 32px;
   }
@@ -1029,11 +1052,18 @@ header {
   .p {
     font-size: 18px;
   }
-  .container {
+  .container,
+  .container-md {
     max-width: 1440px;
   }
   .show-lg {
-    display: unset;
+    display: unset !important;
+  }
+  .visible-lg {
+    visibility: visible;
+  }
+  .hide-lg {
+    display: none !important;
   }
   .navbar {
     height: 88px;

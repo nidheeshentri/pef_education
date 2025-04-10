@@ -1,10 +1,10 @@
 "use client"
 
 import DestinationSlider from "@/components/destinationCarousal/DestinationSlider";
-import TestimonialCards from "@/components/testimonialCards/TestimonialCards";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef  } from "react";
+import OverlappingCarousel from "@/components/testimonialCarousal/TestimonialCarousal";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -237,27 +237,27 @@ export default function Home() {
             </div>
             <ul className="home-programs">
               <li>
-                <p className="h5 weight-500">Undergraduate Programs</p>
+                <p className="h5 weight-500 font-inter">Undergraduate Programs</p>
                 <p className = "t-dark-70">Earn your degree from top universities in <span className = "bold">25+ countries</span> with expert guidance, career-focused learning, and global connections.</p>
               </li>
               <li>
-                <p className="h5 weight-500 mb-20">Postgraduate Programs</p>
+                <p className="h5 weight-500 mb-20 font-inter">Postgraduate Programs</p>
                 <p className = "t-dark-70">Pursue a master&apos;s degree from leading universities in <span className = "bold">20+ countries</span>. We handle the admissions, provide expert career advice, and connect you with industry opportunities for a successful future.</p>
               </li>
               <li>
-                <p className="h5 weight-500 mb-20">Exchange Programs </p>
+                <p className="h5 weight-500 mb-20 font-inter">Exchange Programs </p>
                 <p className = "t-dark-70">Study abroad in <span className = "bold">15+ countries</span> with complete support on visas, housing, and credits for a smooth experience.</p>
               </li>
               <li>
-                <p className="h5 weight-500 mb-20">Language Programs</p>
+                <p className="h5 weight-500 mb-20 font-inter">Language Programs</p>
                 <p className = "t-dark-70">Master new languages in <span className = "bold">10+ countries</span> through immersive learning, expert guidance, and real-world communication practice.</p>
               </li>
               <li>
-                <p className="h5 weight-500 mb-20">Foundation Program</p>
+                <p className="h5 weight-500 mb-20 font-inter">Foundation Program</p>
                 <p className = "t-dark-70">Prepare for university success in <span className = "bold">12+ countries</span> with academic training, language support, and guaranteed placement.</p>
               </li>
               <li style = {{border: 0}}>
-                <p className="h5 weight-500 mb-20">Certificate & Diploma Programs</p>
+                <p className="h5 weight-500 mb-20 font-inter">Certificate & Diploma Programs</p>
                 <p className = "t-dark-70">Gain industry-specific skills in <span className = "bold">18+ countries</span> with practical training, career guidance, and global job opportunities.</p>
               </li>
             </ul>
@@ -285,23 +285,23 @@ export default function Home() {
               For Studying Abroad</h2>
               <ul className="home-services">
                 <li>
-                  <p className="h4">Expert Language Training </p>
+                  <p className="h4 font-inter">Expert Language Training </p>
                   <p className = "t-dark-70">Learn IELTS, German, and French with professional training to enhance your study and career opportunities abroad.</p>
                 </li>
                 <li>
-                  <p className="h4 mb-20">Hassle-Free University Admissions </p>
+                  <p className="h4 mb-20 font-inter">Hassle-Free University Admissions </p>
                   <p className = "t-dark-70">Get step-by-step guidance for domestic and international admissions, ensuring a smooth and successful application process.</p>
                 </li>
                 <li>
-                  <p className="h4 mb-20">Career Guidance with AI Assessment</p>
+                  <p className="h4 mb-20 font-inter">Career Guidance with AI Assessment</p>
                   <p className = "t-dark-70">Find the right career path with AI-driven assessments and psychometric tests for informed academic and professional decisions.</p>
                 </li>
                 <li>
-                  <p className="h4 mb-20">Global Vocational & Pathway Programs</p>
+                  <p className="h4 mb-20 font-inter">Global Vocational & Pathway Programs</p>
                   <p className = "t-dark-70">Gain practical skills through vocational and pathway programs in the USA, Spain, Ireland, and Europe.</p>
                 </li>
                 <li>
-                  <p className="h4 mb-20">Scholarship & Loan Assistance</p>
+                  <p className="h4 mb-20 font-inter">Scholarship & Loan Assistance</p>
                   <p className = "t-dark-70">Get expert support for scholarships and education loans to make studying abroad more affordable and accessible.</p>
                 </li>
               </ul>
@@ -339,25 +339,27 @@ export default function Home() {
           <div className = "journey-steps-container mb-80">
             <div className = "journey-item">
               <h1 className="text-center">01</h1>
-              <h4 className="highlight1 text-center">Expert Consultation</h4>
+              <h4 className="highlight1 text-center font-inter">Expert Consultation</h4>
               <p className = "text-center t-dark-70">Our experienced counselors will listen to your goals and guide you toward the best study options.</p>
             </div>
             <div className = "journey-item">
               <h1 className="text-center">02</h1>
-              <h4 className="highlight1 text-center">Hassle-Free Application</h4>
+              <h4 className="highlight1 text-center font-inter">Hassle-Free Application</h4>
               <p className = "text-center t-dark-70">We&apos;ll handle the paperwork, applications, and follow-ups — making the process smooth and stress-free.</p>
             </div>
             <div className = "journey-item">
               <h1 className="text-center">03</h1>
-              <h4 className="highlight1 text-center">Visa & Departure Support</h4>
+              <h4 className="highlight1 text-center font-inter">Visa & Departure Support</h4>
               <p className = "text-center t-dark-70">From visa approval to travel and accommodation, we&apos;ll ensure you&apos;re fully prepared for your new journey.</p>
             </div>
           </div>
         </div>
       </section>
-      <div className = "mb-80">
-        <TestimonialCards />
-      </div>
+      <section id = "testimonialCarousalContainer">
+        <div className = "container-md mb-80">
+          <OverlappingCarousel />
+        </div>
+      </section>
       <section className = "mb-80">
         <div className="container">
           <div className = "faq-container">

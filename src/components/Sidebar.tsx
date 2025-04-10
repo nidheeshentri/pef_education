@@ -34,6 +34,9 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
               <Link href={item.link} onClick={onClose} className={pathname === item.link?"bold":""}>{item.title}</Link>
             </li>
           ))}
+          <li>
+            <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'>Contact</Link>
+          </li>
         </ul>
         <div className="sidebar-footer">
           <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'><button>

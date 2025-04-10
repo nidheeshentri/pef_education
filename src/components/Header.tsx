@@ -41,6 +41,9 @@ const Header = () => {
                             <Link href = {item.link} className={pathname === item.link?"bold":""}>{item.title}</Link>
                         </li>
                     ))}
+                    <li>
+                        <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'>Contact</Link>
+                    </li>
                 </ul>
             </nav>
             <Link href="//api.whatsapp.com/send?phone=919895101101&text=Hi" target='_blank'><button>
