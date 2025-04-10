@@ -26,16 +26,15 @@ export default function Home() {
         observer.unobserve(entry.target);
       }
     }, { threshold: 0.1 });
+    const currentRef  = sectionRef.current;
     
-    if (sectionRef.current) {
-      const sectionRefVal = sectionRef.current
-      observer.observe(sectionRefVal);
+    if (currentRef) {
+      observer.observe(currentRef );
     }
     
     return () => {
-      if (sectionRef.current) {
-        const sectionRefVal = sectionRef.current
-        observer.unobserve(sectionRefVal);
+      if (currentRef) {
+        observer.unobserve(currentRef );
       }
     };
   }, []);

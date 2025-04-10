@@ -56,7 +56,7 @@ const OverlappingCarousel = () => {
                     <div className="testimonial-title mb-20">
                         <h2 className="slide-header mb-32">See How Others Made It Happen.</h2>
                         <p className="testimonial-para">
-                            "I was nervous about studying abroad, but their team made it feel so easy. They guided me through every step — from choosing the right university to securing my visa. Now I'm living my dream in Canada!"
+                        &quot;I was nervous about studying abroad, but their team made it feel so easy. They guided me through every step — from choosing the right university to securing my visa. Now I&apos;m living my dream in Canada!&quot;
                         </p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ const OverlappingCarousel = () => {
                     <div className="testimonial-title mb-20">
                         <h2 className="slide-header mb-32">See How Others Made It Happen</h2>
                         <p className="testimonial-para">
-                        "The application process seemed overwhelming at first, but with their expert guidance, I was able to navigate it smoothly. My experience studying in Australia has been life-changing!"
+                        &quot;The application process seemed overwhelming at first, but with their expert guidance, I was able to navigate it smoothly. My experience studying in Australia has been life-changing!&quot;
                         </p>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ const OverlappingCarousel = () => {
                     <div className="testimonial-title mb-20">
                         <h2 className="slide-header mb-32">See How Others Made It Happen</h2>
                         <p className="testimonial-para">
-                            "Their personalized approach made all the difference. They helped me find a program that perfectly matched my career goals, and now I'm thriving in my studies abroad!"
+                        &quot;Their personalized approach made all the difference. They helped me find a program that perfectly matched my career goals, and now I&apos;m thriving in my studies abroad!&quot;
                         </p>
                     </div>
                 </div>
