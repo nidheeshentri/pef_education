@@ -96,7 +96,7 @@ const DestinationSlider = () => {
         <div className="slider-container">
           <button 
             className="slider-arrow prev" 
-            onClick={handlePrev}
+            onClick={handleNext}
             aria-label="Previous destination"
           >
             <Image src = "/images/Left.svg" alt = "Right arrow" height={18} width={18}/>
@@ -127,7 +127,7 @@ const DestinationSlider = () => {
                       src={destination.image} 
                       alt={`${destination.name} image`} 
                       width={300} 
-                      height={200}
+                      height={500}
                       className="destination-img"
                     />
                     <div className="flag-country-container">
@@ -140,9 +140,9 @@ const DestinationSlider = () => {
                           className="flag-img"
                         />
                       </div>
-                      <div className="country-name-overlay">
+                      <p className="country-name-overlay">
                         {destination.name}
-                      </div>
+                      </p>
                     </div>
                   </div>
                   <div className="card-content">
@@ -155,7 +155,7 @@ const DestinationSlider = () => {
           
           <button 
             className="slider-arrow next" 
-            onClick={handleNext}
+            onClick={handlePrev}
             aria-label="Next destination"
           >
             <Image src = "/images/Left.svg" alt = "Right arrow" height={18} width={18}/>

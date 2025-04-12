@@ -72,11 +72,11 @@ $light-red: hsla(0, 100%, 51%, 0.056);
     }
     
     &.prev {
-      left: 20px;
+      left: 0px;
     }
     
     &.next {
-      right: 20px;
+      right: 0px;
       transform: rotate(180deg);
     }
   }
@@ -136,6 +136,7 @@ $light-red: hsla(0, 100%, 51%, 0.056);
       height: 260px;
       width: 100%;
       overflow: hidden;
+      border-radius: 5px;
       
       .destination-img {
         width: 100%;
@@ -278,10 +279,6 @@ $light-red: hsla(0, 100%, 51%, 0.056);
       &.right {
         left: calc(50% + 350px);
       }
-      
-      .card-image {
-        height: 190px;
-      }
     }
   }
 }
@@ -306,7 +303,7 @@ $light-red: hsla(0, 100%, 51%, 0.056);
       }
       
       .card-image {
-        height: 170px;
+        height: 200px;
       }
       
       .country-name-overlay {

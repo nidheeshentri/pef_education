@@ -27,9 +27,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1), box-shadow 0.6s ease, filter 0.4s ease, z-index 0.2s;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease, filter 0.4s ease, z-index 0.2s;
   transform-origin: center;
-  opacity: 1;
   will-change: transform, filter;
 }
 
@@ -259,5 +258,8 @@
   }
   .detail-label {
     font-size: 16px !important;
+  }
+  .profile-details .detail-item {
+    gap: 20px;
   }
 }/*# sourceMappingURL=OverlappingCarousel.css.map */

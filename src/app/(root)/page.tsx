@@ -157,7 +157,7 @@ export default function Home() {
       </section>
       <section id = "home-mbbs">
         <div className="relative">
-          <div className = "container">
+          <div className = "container relative">
             <div className = "d-flex justify-content-center mb-24 gap-10 flex-wrap">
               <h2>Looking for the Best</h2>
               <Image src = "/images/icons/mbbs_icon.png" height= {56} width = {100} alt = "PEF education MBBS"/>
@@ -169,9 +169,10 @@ export default function Home() {
                 Enquire
               </button></Link>
             </div>
+            <Image src = "/images/1doctora.png" className = "doctor-left show-lg" height={300} width={300} alt = "doctor" />
           </div>
           <Image src = "/images/cloud_left.png" className = "cloud-left" height={100} width={100} alt = "cloud left" />
-          <Image src = "/images/cloud_right.png" className = "cloud-right" height={100} width={100} alt = "cloud left" />
+          <Image src = "/images/cloud_right.png" className = "cloud-right" height={100} width={100} alt = "cloud right" />
         </div>
       </section>
 
@@ -180,21 +181,21 @@ export default function Home() {
           <div className = "features-cards">
             <div className = "features-card">
               <div className="features-icon-container">
-                <Image src = "/images/icons/career.png" height={48} width={48} alt = "career icon" className="features-icon"/>
+                <Image src = "/images/icons/degree.svg" height={48} width={48} alt = "career icon" className="features-icon"/>
               </div>
               <h3 className = "h4 weight-500">Top Universities</h3>
               <p>Learn from the best medical schools, globally recognized and trusted</p>
             </div>
             <div className = "features-card">
               <div className="features-icon-container">
-                <Image src = "/images/icons/form.png" height={48} width={48} alt = "career icon" className="features-icon"/>
+                <Image src = "/images/icons/form.svg" height={48} width={48} alt = "admission icon" className="features-icon"/>
               </div>
               <h3 className = "h4 weight-500">Seamless Admissions</h3>
               <p>We simplify your MBBS journey with expert guidance and easy applications</p>
             </div>
             <div className = "features-card">
               <div className="features-icon-container">
-                <Image src = "/images/icons/certificate.png" height={48} width={48} alt = "career icon" className="features-icon"/>
+                <Image src = "/images/icons/scholarship.svg" height={48} width={48} alt = "certificate icon" className="features-icon"/>
               </div>
               <h3 className = "h4 weight-500">Scholarship Support</h3>
               <p>Explore financial aid options to make your medical education stress-free</p>
@@ -230,7 +231,7 @@ export default function Home() {
                 <h2 className = "mb-16">Find the<br/>
                 <span className="highlight1">Right Program</span> for You</h2>
                 <Link href = "/programs"><button className="button2">
-                  Explore All Programs
+                  Know More
                 </button></Link>
               </div>
             </div>
@@ -273,7 +274,7 @@ export default function Home() {
                 For Studying Abroad
               </h2>
               <div className="lg-sticky-top">
-                <Image src = "/images/Services.jpeg" height = {1200} width = {1200} alt = "services image"/>
+                <Image className="services-img" src = "/images/Services.jpeg" height = {1200} width = {1200} alt = "services image"/>
               </div>
             </div>
             <div className="mb-24">
@@ -373,8 +374,8 @@ export default function Home() {
             <ul className = "faqs">
               {faqs.map((faq, index) => {
                 return(
-                  <li className = "mb-20" key = {index}>
-                    <div className = "mb-20 d-flex justify-content-between">
+                  <li className = "mb-32" key = {index}>
+                    <div className = "mb-16 d-flex justify-content-between">
                       <p className="bold">
                         {faq.title}
                       </p>

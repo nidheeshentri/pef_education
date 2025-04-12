@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
         <ul>
           {navLinks.map((item, index) => (
             <li key={index}>
-              <Link href={item.link} onClick={onClose} className={pathname === item.link?"bold":""}>{item.title}</Link>
+              <Link href={item.link} onClick={onClose} className={pathname === item.link?"active-link":""}>{item.title}</Link>
             </li>
           ))}
           <li>

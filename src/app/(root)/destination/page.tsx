@@ -175,12 +175,12 @@ const Destination = () => {
         <section className=" mb-140">
           <div className="abroad-destination container">
             <div>
-              <h1>
+              <h2>
                 How to Choose the Right Study <span>Abroad Destination</span> ?
-              </h1>
+              </h2>
             </div>
             <div className="abroad-destination-section">
-              <div className="mb-24">
+              <div>
                 <Image
                   className="abroad-image"
                   src="/images/abroad.png"

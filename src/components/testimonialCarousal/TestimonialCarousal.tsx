@@ -43,7 +43,7 @@ const OverlappingCarousel = () => {
         }
       });
       setIsAnimating(false);
-    }, 300);
+    }, 400);
   }
 
   return (
@@ -91,7 +91,7 @@ const OverlappingCarousel = () => {
                     <div className="profile-details">
                         <div className="detail-item">
                           <div className="detail-label">Name</div>
-                          <div className="detail-value">Full Name</div>
+                          <div className="detail-value">Elena Rossi</div>
                         </div>
 
                         <div className="detail-item">

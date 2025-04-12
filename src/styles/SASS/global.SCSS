@@ -33,6 +33,7 @@ $p-lg: 18px;
 
 html {
   scroll-padding-top: 110px; /* adjust to your header height */
+  background-color: #FBFBFB;
 }
 
 h1,
@@ -130,6 +131,10 @@ a {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+.active-link{
+  color: $primary-color!important;
+  font-weight: 600;
 }
 button,
 .button {
@@ -361,10 +366,10 @@ header {
 }
 .features-cards {
   padding: 48px 0px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
   color: $text-light;
-  flex-wrap: wrap;
 }
 .features-card {
   h3 {
@@ -502,7 +507,7 @@ header {
 #destination-hero-section {
   background-image: url("/images/world-background.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 .program-container {
   display: flex;
@@ -557,7 +562,9 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      a{
+        width: 100%;
+      };
       img {
         width: 100%;
         height: 180px;
@@ -583,15 +590,17 @@ header {
   .programs-cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     margin-top: 40px;
+  }
+  .program-description{
+    opacity: 60%;
   }
   .program-card {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 20px;
     .duration {
       display: flex;
       align-items: center;
@@ -651,14 +660,13 @@ header {
   li {
     position: relative;
     padding-left: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     &::before {
       counter-increment: item;
       content: counter(item);
       position: absolute;
       left: 0;
-      top: 0.3rem;
       width: 1.2rem;
       height: 1.2rem;
       background-color: #ed1f24;
@@ -678,7 +686,9 @@ header {
     border-radius: 20px;
   }
 }
-
+.program-list{
+  margin-top: 40px;
+}
 .destination {
   text-align: center;
   margin-top: 120px;
@@ -775,6 +785,7 @@ header {
     box-shadow: $box-shadow;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     position: relative;
+    border: 4px solid white;
 
     cursor: pointer;
 
@@ -904,7 +915,7 @@ header {
       }
 
       .detail-value {
-        font-size: 1.1rem;
+        font-size: 14px;
         margin-top: 2px;
         margin-bottom: 14px;
         font-weight: 600;
@@ -925,9 +936,16 @@ header {
 .cloud-left,
 .cloud-right {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   height: 150px;
   width: 250px;
+}
+.doctor-left{
+  object-fit: contain;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: -1;
 }
 .cloud-right {
   right: 0;
@@ -950,7 +968,21 @@ header {
   overflow: hidden;
 }
 
+
+
+@media screen and (max-width: 744px) {
+  .destination h1{
+    font-size: 28px;
+  }
+  .services-img{
+    height: 400px!important;
+    object-fit: cover;
+  }
+}
 @media screen and (min-width: 744px) {
+  .detail-value {
+    font-size: 16px!important;
+  }
   .container,
   .container-md {
     max-width: 1000px;
@@ -967,6 +999,9 @@ header {
         margin-bottom: 110px;
       }
     }
+  }
+  .features-cards {
+    grid-template-columns: 1fr 1fr;
   }
   .journey-steps-container {
     grid-template-columns: 1fr 1fr;
@@ -1021,14 +1056,13 @@ header {
     li {
       position: relative;
       padding-left: 30px;
-      margin: 15px 0px;
+      margin: 20px 0px;
 
       &::before {
         counter-increment: item;
         content: counter(item);
         position: absolute;
         left: 0;
-        top: 0.1rem;
         width: 1.2rem;
         height: 1.2rem;
         background-color: #ed1f24;
@@ -1142,7 +1176,7 @@ header {
     }
   }
   .features-cards {
-    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   #home-journey {
     display: block;
@@ -1241,7 +1275,7 @@ header {
 
     h3 {
       margin: 10px 0px;
-      font-size: 26px;
+      font-size: 20px;
     }
     ul {
       counter-reset: item;
@@ -1252,14 +1286,13 @@ header {
     li {
       position: relative;
       padding-left: 30px;
-      margin: 15px 0px;
+      margin: 20px 0px;
 
       &::before {
         counter-increment: item;
         content: counter(item);
         position: absolute;
         left: 0;
-        top: 0.1rem;
         width: 1.2rem;
         height: 1.2rem;
         background-color: #ed1f24;
@@ -1284,6 +1317,7 @@ header {
   }
   .abroad-destination-section {
     display: grid;
+    align-items: flex-end;
     gap: 80px;
     grid-template-columns: 1fr 1fr;
     direction: rtl;
@@ -1313,7 +1347,7 @@ header {
     font-weight: 500;
   }
   #programs-section-container {
-    margin-bottom: 180px;
+    margin-bottom: 120px;
   }
   .journey-item {
     h1 {

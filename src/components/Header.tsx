@@ -38,7 +38,7 @@ const Header = () => {
                 <ul>
                     {navLinks.map((item, index) => (
                         <li key = {index}>
-                            <Link href = {item.link} className={pathname === item.link?"bold":""}>{item.title}</Link>
+                            <Link href = {item.link} className={pathname === item.link?"active-link":""}>{item.title}</Link>
                         </li>
                     ))}
                     <li>
